@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tesla Sneakers - Tênis e Estilo</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            background: linear-gradient(135deg, #111, #444);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+        }
+
+        /* MENU */
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #aaa;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #222;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        .inicio img {
+            width: 45%;
+            border-radius: 15px;
+        }
+
+        .inicio-texto {
+            width: 55%;
+        }
+
+        .inicio-texto h2 {
+            text-align: left;
+        }
+
+        /* CARDS */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        .preco {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .botao {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .botao:hover {
+            background-color: #555;
+        }
+
+        /* DIFERENCIAIS */
+
+        .diferencial {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-left: 6px solid #222;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .diferencial h3 {
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        /* DESTAQUE */
+
+        .projeto {
+            background: linear-gradient(135deg, #222, #444);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .projeto h2 {
+            color: white;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* RESPONSIVIDADE */
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .inicio {
+                flex-direction: column;
+            }
+
+            .inicio img,
+            .inicio-texto {
+                width: 100%;
+            }
+
+            .inicio-texto h2 {
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+
+        <h1>👟 TESLA SNEAKERS</h1>
+
+        <p>Estilo, conforto e personalidade</p>
+
+        <p>
+            Descubra seu próximo tênis favorito.
+        </p>
+
+    </header>
+
+    <!-- MENU -->
+
+    <nav>
+
+        <a href="#inicio">Início</a>
+
+        <a href="#modelos">Modelos</a>
+
+        <a href="#sobre">Sobre</a>
+
+        <a href="#diferenciais">Diferenciais</a>
+
+        <a href="#contato">Contato</a>
+
+    </nav>
+
+    <!-- INÍCIO -->
+
+    <section id="inicio">
+
+        <div class="inicio">
+
+            <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+                alt="Tênis esportivo vermelho"
+            >
+
+            <div class="inicio-texto">
+
+                <h2>🔥 Encontre seu estilo!</h2>
+
+                <p>
+                    Bem-vindo à <strong>Tesla Sneakers</strong>,
+                    uma vitrine dedicada a quem procura tênis
+                    com visual moderno e personalidade.
+                </p>
+
+                <br>
+
+                <p>
+                    Explore modelos esportivos, casuais e urbanos
+                    para diferentes ocasiões.
+                </p>
+
+                <br>
+
+                <p>
+                    👟 Design + ⚡ Atitude + 🏁 Estilo
+                </p>
+
+                <br>
+
+                <p>
+                    Escolha o modelo que combina com você!
+                </p>
+
+                <a href="#modelos" class="botao">
+                    Ver modelos
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MODELOS -->
+
+    <section id="modelos">
+
+        <h2>👟 Modelos em destaque</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80"
+                    alt="Tênis esportivo vermelho"
+                >
+
+                <h3>Tênis Esportivo</h3>
+
+                <p>
+                    Visual marcante para compor looks esportivos
+                    e casuais.
+                </p>
+
+                <p class="preco">R$ 299,90</p>
+
+                <button class="botao"
+                    onclick="comprar('Tênis Esportivo')">
+                    Tenho interesse
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=700&q=80"
+                    alt="Tênis casual moderno"
+                >
+
+                <h3>Tênis Casual</h3>
+
+                <p>
+                    Um modelo versátil para o dia a dia,
+                    com estilo urbano.
+                </p>
+
+                <p class="preco">R$ 349,90</p>
+
+                <button class="botao"
+                    onclick="comprar('Tênis Casual')">
+                    Tenho interesse
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=700&q=80"
+                    alt="Tênis esportivo branco"
+                >
+
+                <h3>Tênis Street</h3>
+
+                <p>
+                    Design urbano para quem gosta de destacar
+                    seu próprio estilo.
+                </p>
+
+                <p class="preco">R$ 279,90</p>
+
+                <button class="botao"
+                    onclick="comprar('Tênis Street')">
+                    Tenho interesse
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80"
+                    alt="Tênis moderno para uso casual"
+                >
+
+                <h3>Tênis Premium</h3>
+
+                <p>
+                    Um visual sofisticado para completar
+                    diferentes combinações.
+                </p>
+
+                <p class="preco">R$ 399,90</p>
+
+                <button class="botao"
+                    onclick="comprar('Tênis Premium')">
+                    Tenho interesse
+                </button>
+
+            </div>
+
+        </div>
+
+        <p style="text-align:center; margin-top:20px;">
+            Os modelos, preços e imagens desta página são
+            ilustrativos e não representam necessariamente
+            produtos oficiais da Tesla.
+        </p>
+
+    </section>
+
+    <!-- SOBRE -->
+
+    <section id="sobre">
+
+        <h2>⚡ Sobre a Tesla Sneakers</h2>
+
+        <div class="projeto">
+
+            <h2>Mais que um tênis, um estilo.</h2>
+
+            <p>
+                A Tesla Sneakers é o conceito de uma vitrine
+                de calçados voltada para pessoas que valorizam
+                design, conforto e autenticidade.
+            </p>
+
+            <br>
+
+            <p>
+                Aqui você pode conhecer diferentes estilos
+                de tênis e encontrar inspiração para suas
+                combinações.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- DIFERENCIAIS -->
+
+    <section id="diferenciais">
+
+        <h2>✨ Nossos diferenciais</h2>
+
+        <div class="diferencial">
+
+            <h3>👟 Variedade de estilos</h3>
+
+            <p>
+                Modelos esportivos, casuais e urbanos para
+                diferentes gostos.
+            </p>
+
+        </div>
+
+        <div class="diferencial">
+
+            <h3>🎨 Design moderno</h3>
+
+            <p>
+                Uma seleção visual inspirada nas tendências
+                do universo sneaker.
+            </p>
+
+        </div>
+
+        <div class="diferencial">
+
+            <h3>💻 Experiência digital</h3>
+
+            <p>
+                Uma vitrine organizada para você explorar
+                os modelos com facilidade.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+
+    <section id="contato">
+
+        <div class="projeto">
+
+            <h2>🚀 Gostou de algum modelo?</h2>
+
+            <p>
+                Escolha seu tênis favorito e entre em contato
+                para consultar disponibilidade e informações.
+            </p>
+
+            <a href="#modelos" class="botao">
+                Explorar modelos
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            👟 Tesla Sneakers - Estilo em cada passo.
+        </p>
+
+        <p>
+            Design, personalidade e atitude.
+        </p>
+
+        <br>
+
+        <p>
+            © 2026 - Projeto demonstrativo
+        </p>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function comprar(nome) {
+
+            alert(
+                "Você escolheu: " + nome +
+                "\\nEste é um site demonstrativo. " +
+                "Consulte o vendedor para verificar " +
+                "preços e disponibilidade."
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
